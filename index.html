@@ -3,21 +3,18 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ananya Gupta | Portfolio</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <title>Ananya Gupta | Data Analytics Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-  <!-- ===== HEADER ===== -->
-  <header class="header">
-    <div class="container">
-      <div class="nav-left">
-        <h2 class="site-name">Ananya Gupta</h2>
-      </div>
-      <nav class="nav-right">
-        <ul>
+  <!-- ===== NAVBAR ===== -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <div class="brand">Ananya Gupta</div>
+      <nav>
+        <ul class="nav-links">
           <li><a href="#home">Home</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#about">About Me</a></li>
@@ -29,12 +26,10 @@
 
   <!-- ===== HERO SECTION ===== -->
   <section id="home" class="hero">
-    <div class="container hero-flex">
+    <div class="container hero-container">
       <div class="hero-text">
-        <h1 class="hero-name">Ananya Gupta</h1>
-        <p class="hero-tagline">
-          Data & Analytics Intern passionate about turning raw data into meaningful stories that drive decisions.
-        </p>
+        <h1>Ananya Gupta</h1>
+        <p>Data & Analytics Intern with a passion for creating meaningful insights from data.</p>
         <div class="hero-buttons">
           <a href="#projects" class="btn-primary">View Projects</a>
           <a href="#about" class="btn-secondary">Learn More</a>
@@ -50,14 +45,15 @@
   <section id="projects" class="projects">
     <div class="container">
       <h2>Featured Projects</h2>
-      <p>Explore a selection of my data analytics work—transforming numbers into narratives and dashboards into insights.</p>
+      <p>Explore a selection of my most impactful data analysis work, showcasing diverse methodologies and insights.</p>
 
       <div class="project-grid">
         <div class="project-card">
           <img src="images/consumer-insights.jpg" alt="Indian Consumer Insights Dashboard">
+          <p class="project-category">Business Intelligence</p>
           <h3>Indian Consumer Insights Dashboard</h3>
           <p>Analyzed purchasing patterns and satisfaction trends using Power BI and Apache Superset.</p>
-          <a href="#" class="view-details">View Details</a>
+          <a href="#" class="project-link">View Details</a>
         </div>
       </div>
     </div>
@@ -68,7 +64,7 @@
     <div class="container">
       <h2>About Me</h2>
       <p>
-        I'm a Data & Analytics Intern at Everise with experience in building interactive dashboards, automating workflows, and translating business data into clear visual insights. 
+        I'm a Data & Analytics Intern at Everise, with experience in building interactive dashboards, automating workflows, and translating data into clear, actionable insights. 
         Skilled in Python, Power BI, Apache Superset, and data storytelling.
       </p>
     </div>
@@ -78,14 +74,14 @@
   <section id="contact" class="contact">
     <div class="container">
       <h2>Contact</h2>
-      <p>Let's connect! Reach me at 
-        <a href="mailto:ananyagupta@example.com">ananyagupta@example.com</a>
+      <p>Let’s connect! Reach me at 
+        <a href="mailto:ananya@example.com">ananya@example.com</a>
       </p>
     </div>
   </section>
 
   <footer>
-    <p>© 2025 Ananya Gupta | Designed with 💡 using GitHub Pages</p>
+    <p>© 2025 Ananya Gupta</p>
   </footer>
 </body>
 </html>
