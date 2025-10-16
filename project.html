@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Indian Consumer & Fraud Dashboard | Ananya Gupta</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
+  <!-- ===== NAVBAR ===== -->
   <header class="navbar">
     <div class="container nav-container">
       <nav>
@@ -21,64 +23,72 @@
     </div>
   </header>
 
+  <!-- ===== PROJECT HERO ===== -->
   <section class="project-hero">
     <div class="container">
       <h1>Indian Consumer & Fraud Insights Dashboard</h1>
       <p class="subtitle">
-        A Power BI dashboard uncovering transaction behavior and fraud patterns across consumer categories and states in India.
+        A Power BI dashboard analyzing consumer transactions, fraud patterns, and behavioral trends across India.
       </p>
-      <img src="images/fraud-dashboard-cover.jpg" alt="Fraud Dashboard Preview" class="project-banner">
     </div>
   </section>
 
+  <!-- ===== PROJECT OVERVIEW ===== -->
   <section class="project-section">
     <div class="container">
       <h2>Overview</h2>
       <p>
-        This interactive Power BI report analyzes over 10 k simulated consumer transactions, combining demographic and fraud data to reveal patterns in spending and risk.  
-        The dashboard integrates KPIs, category-level analysis, and map visualizations to support fraud detection and business decision-making.
+        This Power BI report explores a simulated dataset of consumer transactions and fraud cases in India. 
+        It visualizes financial performance, category-level fraud risk, and regional revenue distribution. 
+        The goal was to build an intuitive dashboard for identifying high-risk areas, understanding behavioral drivers, 
+        and improving fraud prevention through data storytelling.
       </p>
     </div>
   </section>
 
+  <!-- ===== DASHBOARD IMAGE ===== -->
   <section class="project-section alt-bg">
     <div class="container">
-      <h2>Interactive Dashboard</h2>
-      <p>Explore the Power BI report below to view KPIs, fraud rates by category, and revenue distribution by state.</p>
-
-      <!-- Replace with your published Power BI link -->
-      <iframe title="Indian Consumer & Fraud Dashboard"
-              width="100%" height="600"
-              src="https://app.powerbi.com/view?r=REPLACE_WITH_YOUR_LINK"
-              frameborder="0" allowFullScreen="true"></iframe>
+      <h2>Dashboard Visualization</h2>
+      <p>
+        Below is the interactive Power BI dashboard visualized as a high-resolution capture. 
+        It highlights total revenue, fraud rates by category, revenue and fraud correlations, and state-level revenue distribution.
+      </p>
+      <img src="images/fraud-dashboard-cover.jpg" alt="Fraud Dashboard Screenshot" class="dashboard-image">
+      <p class="note">
+        Built with Power BI using simulated consumer and fraud data.
+      </p>
     </div>
   </section>
 
+  <!-- ===== INSIGHTS ===== -->
   <section class="project-section">
     <div class="container">
       <h2>Key Insights</h2>
       <ul class="insight-list">
-        <li>Overall fraud rate was high (52 %), driven by risk-heavy digital categories.</li>
-        <li><strong>Online Shopping</strong> and <strong>Entertainment</strong> showed the highest fraud exposure (> 53 %).</li>
-        <li><strong>Travel</strong> maintained steady revenue despite fraud, signifying robust mitigation.</li>
-        <li>Revenue spikes in Oct–Dec 2022 aligned with festival spending patterns.</li>
-        <li>High-revenue states also displayed elevated transaction volumes and fraud activity, showing correlated consumer density.</li>
+        <li>The overall fraud rate was high (52%), driven by risk-heavy digital categories such as <strong>Online Shopping</strong> and <strong>Entertainment</strong>.</li>
+        <li><strong>Travel</strong> maintained steady revenue despite elevated fraud exposure, suggesting effective mitigation measures.</li>
+        <li>Fraud and revenue patterns showed regional concentration in high-income states with larger consumer activity.</li>
+        <li>Revenue peaked during <strong>festival months (Oct–Dec 2022)</strong>, indicating strong seasonal demand.</li>
+        <li>Combining fraud probability with transaction size revealed a higher risk in mid-value purchases (₹10k–₹30k).</li>
       </ul>
     </div>
   </section>
 
+  <!-- ===== TOOLS ===== -->
   <section class="project-section alt-bg">
     <div class="container">
       <h2>Tools & Techniques</h2>
       <p>
         <strong>Tool:</strong> Microsoft Power BI<br>
         <strong>Dataset:</strong> Simulated Indian Consumer & Fraud Data<br>
-        <strong>Methods:</strong> DAX KPIs, map visuals, combo charts, cross-filtering, data modeling<br>
-        <strong>Focus:</strong> Consumer segmentation and fraud detection insights through visual storytelling
+        <strong>Techniques:</strong> DAX measures, KPI cards, map visuals, combo charts, data modeling<br>
+        <strong>Focus:</strong> Fraud detection, consumer segmentation, and regional performance visualization
       </p>
     </div>
   </section>
 
+  <!-- ===== BACK LINK ===== -->
   <section class="project-back">
     <div class="container">
       <a href="index.html#projects" class="btn-secondary">← Back to Projects</a>
