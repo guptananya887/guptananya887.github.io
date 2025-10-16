@@ -239,3 +239,19 @@ footer {
   padding: 1.2rem 0;
   font-size: 0.9rem;
 }
+
+
+.project-hero {background:#f9fafb;text-align:center;padding:6rem 0 3rem;}
+.project-hero h1{font-size:2.4rem;font-weight:700;margin-bottom:1rem;}
+.project-hero .subtitle{color:#374151;max-width:760px;margin:0 auto 2rem;font-size:1.1rem;}
+.project-banner{width:100%;max-width:900px;border-radius:12px;box-shadow:0 4px 10px rgba(0,0,0,.08);}
+.project-section{padding:5rem 0;text-align:left;}
+.alt-bg{background:#fff;}
+.project-section h2{font-size:1.8rem;margin-bottom:1rem;}
+.project-section p{color:#374151;max-width:900px;margin-bottom:1rem;}
+.insight-list{margin-top:1rem;padding-left:1.5rem;color:#374151;}
+.insight-list li{margin-bottom:.8rem;}
+.project-back{text-align:center;padding:4rem 0;}
+.project-back a{text-decoration:none;border:1px solid #d1d5db;padding:.75rem 1.5rem;border-radius:8px;color:#111827;font-weight:600;}
+.project-back a:hover{background:#f3f4f6;}
+iframe{border-radius:10px;box-shadow:0 2px 10px rgba(0,0,0,.05);}
