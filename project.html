@@ -3,100 +3,89 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Indian Consumer & Fraud Dashboard | Ananya Gupta</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <title>Fraud Analysis Dashboard | Ananya Gupta</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-  <!-- ===== NAVBAR ===== -->
-  <header class="navbar">
-    <div class="container nav-container">
-      <nav>
-        <ul class="nav-links">
-          <li><a href="index.html#home">Home</a></li>
-          <li><a href="index.html#projects">Projects</a></li>
-          <li><a href="index.html#about">About Me</a></li>
-          <li><a href="index.html#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
+  <header>
+    <nav>
+      <h2><a href="index.html">Ananya Gupta</a></h2>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html" class="active">Projects</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <!-- ===== PROJECT HERO ===== -->
   <section class="project-hero">
-    <div class="container">
-      <h1>Indian Consumer & Fraud Insights Dashboard</h1>
-      <p class="subtitle">
-        A Power BI dashboard analyzing consumer transactions, fraud patterns, and behavioral trends across India.
+    <div class="project-intro">
+      <h1>Fraud Analysis in Indian Consumer Transactions</h1>
+      <p class="project-subtitle">
+        A Power BI dashboard exploring fraud patterns, transaction trends, and geographic insights across 10K+ Indian consumer records.
       </p>
     </div>
+    <img src="images/fraud_dashboard.png" alt="Fraud Dashboard Screenshot" class="project-hero-img" />
   </section>
 
-  <!-- ===== PROJECT OVERVIEW ===== -->
-  <section class="project-section">
-    <div class="container">
+  <section class="project-content">
+    <div class="project-text">
       <h2>Overview</h2>
       <p>
-        This Power BI report explores a simulated dataset of consumer transactions and fraud cases in India. 
-        It visualizes financial performance, category-level fraud risk, and regional revenue distribution. 
-        The goal was to build an intuitive dashboard for identifying high-risk areas, understanding behavioral drivers, 
-        and improving fraud prevention through data storytelling.
+        This project analyzes over 10,000 consumer transactions across India to uncover fraud trends, high-risk categories, and state-level
+        spending behavior. It demonstrates the full process — from Python-based data cleaning to an interactive Power BI dashboard that communicates
+        key insights clearly and visually.
       </p>
-    </div>
-  </section>
 
-  <!-- ===== DASHBOARD IMAGE ===== -->
-  <section class="project-section alt-bg">
-    <div class="container">
-      <h2>Dashboard Visualization</h2>
-      <p>
-        Below is a screenshot of the interactive Power BI dashboard. 
-        It highlights total revenue, fraud rates by category, revenue and fraud correlations, and state-level revenue distribution.
-      </p>
-      <img src="images/dashboard.jpg" alt="Fraud Dashboard Screenshot" class="dashboard-image">
-      <p class="note">
-        Built with Power BI using simulated consumer and fraud data.
-      </p>
-    </div>
-  </section>
-
-  <!-- ===== INSIGHTS ===== -->
-  <section class="project-section">
-    <div class="container">
-      <h2>Key Insights</h2>
-      <ul class="insight-list">
-        <li>The overall fraud rate was high (52%), driven by risk-heavy digital categories such as <strong>Online Shopping</strong> and <strong>Entertainment</strong>.</li>
-        <li><strong>Travel</strong> maintained steady revenue despite elevated fraud exposure, suggesting effective mitigation measures.</li>
-        <li>Fraud and revenue patterns showed regional concentration in high-income states with larger consumer activity.</li>
-        <li>Revenue peaked during <strong>festival months (Oct–Dec 2022)</strong>, indicating strong seasonal demand.</li>
-        <li>Combining fraud probability with transaction size revealed a higher risk in mid-value purchases (₹10k–₹30k).</li>
+      <h2>Tools & Process</h2>
+      <ul>
+        <li><strong>Python (pandas, numpy):</strong> data cleaning, missing value handling, and feature engineering</li>
+        <li><strong>Power BI Desktop:</strong> DAX measures, calculated columns, KPI design, and custom visuals</li>
+        <li><strong>Git & GitHub:</strong> version control and documentation</li>
       </ul>
-    </div>
-  </section>
 
-  <!-- ===== TOOLS ===== -->
-  <section class="project-section alt-bg">
-    <div class="container">
-      <h2>Tools & Techniques</h2>
+      <h2>Key KPIs</h2>
+      <ul>
+        <li>Total Transactions: 10.27K</li>
+        <li>Fraudulent Transactions: 5,046</li>
+        <li>Fraud Rate: 52.44%</li>
+        <li>Average Fraud Amount: ₹5.10K</li>
+        <li>Average Revenue per Customer: ₹51.82K</li>
+      </ul>
+
+      <h2>Visual Highlights</h2>
+      <ul>
+        <li><strong>Fraud Trend Over Time:</strong> Dual-axis chart showing spikes in fraudulent transactions during Oct–Dec.</li>
+        <li><strong>Fraud vs Legitimate Split:</strong> Donut chart visualizing the proportion of fraudulent activity across all transactions.</li>
+        <li><strong>Fraud Rate by Category:</strong> Bar chart highlighting Online Shopping and Entertainment as high-risk categories.</li>
+        <li><strong>Fraud Amount by State:</strong> Map showing high-value fraud clusters in Maharashtra, Karnataka, and Tamil Nadu.</li>
+        <li><strong>Fraud by Transaction Value:</strong> Histogram revealing that most fraud occurs in low to mid-value (<₹10K) ranges.</li>
+      </ul>
+
+      <h2>Insights</h2>
       <p>
-        <strong>Tool:</strong> Microsoft Power BI<br>
-        <strong>Dataset:</strong> Simulated Indian Consumer & Fraud Data<br>
-        <strong>Techniques:</strong> DAX measures, KPI cards, map visuals, combo charts, data modeling<br>
-        <strong>Focus:</strong> Fraud detection, consumer segmentation, and regional performance visualization
+        The dashboard highlights how fraud disproportionately affects digital-heavy categories, with activity peaking during high-spending
+        periods. While low-value transactions dominate in frequency, high-value frauds contribute significantly to overall financial loss.
+        The geographical layer reveals fraud concentration in high-income states, emphasizing the need for targeted monitoring.
       </p>
-    </div>
-  </section>
 
-  <!-- ===== BACK LINK ===== -->
-  <section class="project-back">
-    <div class="container">
-      <a href="index.html#projects" class="btn-secondary">← Back to Projects</a>
+      <h2>Outcome</h2>
+      <p>
+        The final dashboard provides a unified fraud intelligence view — helping stakeholders identify patterns, assess monetary risk, and
+        understand how geography and category influence fraudulent activity. It demonstrates my ability to design data pipelines, perform
+        quantitative analysis, and translate findings into clear visual narratives.
+      </p>
+
+      <div class="project-links">
+        <a href="projects.html" class="btn-secondary">← Back to Projects</a>
+        <a href="https://github.com/ananyagpt" target="_blank" class="btn-primary">View on GitHub</a>
+      </div>
     </div>
   </section>
 
   <footer>
-    <p>© 2025 Ananya Gupta</p>
+    <p>© 2025 Ananya Gupta | Data Analytics Portfolio</p>
   </footer>
 </body>
 </html>
