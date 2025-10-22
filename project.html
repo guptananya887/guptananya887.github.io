@@ -3,85 +3,89 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Fraud Analysis Dashboard | Ananya Gupta</title>
+  <title>Fraud Insights Dashboard | Ananya Gupta</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-  <header>
-    <nav>
-      <h2><a href="index.html">Ananya Gupta</a></h2>
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="nav-container">
       <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
         <li><a href="projects.html" class="active">Projects</a></li>
         <li><a href="about.html">About</a></li>
       </ul>
-    </nav>
+    </div>
   </header>
 
+  <!-- HERO SECTION -->
   <section class="project-hero">
-    <div class="project-intro">
-      <h1>Fraud Analysis in Indian Consumer Transactions</h1>
-      <p class="project-subtitle">
-        A Power BI dashboard exploring fraud patterns, transaction trends, and geographic insights across 10K+ Indian consumer records.
+    <div class="container">
+      <h1>Fraud Insights Dashboard</h1>
+      <p class="subtitle">
+        A Power BI dashboard analyzing 10K+ Indian consumer transactions to uncover patterns in fraud, spending behavior, and regional risk.
       </p>
+      <img src="images/fraud_dashboard.png" alt="Fraud Insights Dashboard" class="dashboard-image" />
     </div>
-    <img src="images/fraud_dashboard.png" alt="Fraud Dashboard Screenshot" class="project-hero-img" />
   </section>
 
-  <section class="project-content">
-    <div class="project-text">
+  <!-- OVERVIEW SECTION -->
+  <section class="project-section alt-bg">
+    <div class="container">
       <h2>Overview</h2>
       <p>
-        This project analyzes over 10,000 consumer transactions across India to uncover fraud trends, high-risk categories, and state-level
-        spending behavior. It demonstrates the full process — from Python-based data cleaning to an interactive Power BI dashboard that communicates
-        key insights clearly and visually.
+        This dashboard focuses on identifying fraud patterns across 10,000+ consumer transactions in India. It combines data cleaning in Python with Power BI visualization to explore when, where, and how fraudulent activity occurs.
       </p>
-
-      <h2>Tools & Process</h2>
-      <ul>
-        <li><strong>Python (pandas, numpy):</strong> data cleaning, missing value handling, and feature engineering</li>
-        <li><strong>Power BI Desktop:</strong> DAX measures, calculated columns, KPI design, and custom visuals</li>
-        <li><strong>Git & GitHub:</strong> version control and documentation</li>
+      <ul class="insight-list">
+        <li><strong>Tools Used:</strong> Python (pandas, numpy), Power BI, DAX, GitHub</li>
+        <li><strong>Goal:</strong> Detect fraud trends, understand transaction behavior, and visualize high-risk segments.</li>
       </ul>
+    </div>
+  </section>
 
-      <h2>Key KPIs</h2>
-      <ul>
-        <li>Total Transactions: 10.27K</li>
+  <!-- KPI SECTION -->
+  <section class="project-section">
+    <div class="container">
+      <h2>Key Metrics</h2>
+      <ul class="insight-list">
+        <li>Total Transactions: 10,270</li>
         <li>Fraudulent Transactions: 5,046</li>
         <li>Fraud Rate: 52.44%</li>
-        <li>Average Fraud Amount: ₹5.10K</li>
-        <li>Average Revenue per Customer: ₹51.82K</li>
+        <li>Average Fraud Amount: ₹5,097.90</li>
+        <li>Average Revenue per Customer: ₹48,292.45</li>
       </ul>
+    </div>
+  </section>
 
-      <h2>Visual Highlights</h2>
-      <ul>
-        <li><strong>Fraud Trend Over Time:</strong> Dual-axis chart showing spikes in fraudulent transactions during Oct–Dec.</li>
-        <li><strong>Fraud vs Legitimate Split:</strong> Donut chart visualizing the proportion of fraudulent activity across all transactions.</li>
-        <li><strong>Fraud Rate by Category:</strong> Bar chart highlighting Online Shopping and Entertainment as high-risk categories.</li>
-        <li><strong>Fraud Amount by State:</strong> Map showing high-value fraud clusters in Maharashtra, Karnataka, and Tamil Nadu.</li>
-        <li><strong>Fraud by Transaction Value:</strong> Histogram revealing that most fraud occurs in low to mid-value (<₹10K) ranges.</li>
-      </ul>
-
+  <!-- INSIGHTS SECTION -->
+  <section class="project-section alt-bg">
+    <div class="container">
       <h2>Insights</h2>
-      <p>
-        The dashboard highlights how fraud disproportionately affects digital-heavy categories, with activity peaking during high-spending
-        periods. While low-value transactions dominate in frequency, high-value frauds contribute significantly to overall financial loss.
-        The geographical layer reveals fraud concentration in high-income states, emphasizing the need for targeted monitoring.
-      </p>
+      <ul class="insight-list">
+        <li>Fraudulent transactions make up over half of all transactions analyzed.</li>
+        <li>Online Shopping and Entertainment categories show the highest fraud rates.</li>
+        <li>Fraud values peak in the ₹10K–₹30K range, with smaller transactions being the most frequent.</li>
+        <li>Fraud spikes during October–December, aligning with major festive sale periods.</li>
+        <li>Maharashtra, Karnataka, and Tamil Nadu record the highest average fraud amounts.</li>
+      </ul>
+    </div>
+  </section>
 
+  <!-- OUTCOME SECTION -->
+  <section class="project-section">
+    <div class="container">
       <h2>Outcome</h2>
       <p>
-        The final dashboard provides a unified fraud intelligence view — helping stakeholders identify patterns, assess monetary risk, and
-        understand how geography and category influence fraudulent activity. It demonstrates my ability to design data pipelines, perform
-        quantitative analysis, and translate findings into clear visual narratives.
+        The Fraud Insights Dashboard presents a comprehensive view of fraudulent behavior across different dimensions—time, category, amount, and geography.  
+        It enables business and risk teams to quickly identify high-risk areas, quantify financial impact, and prioritize preventive measures.
       </p>
-
-      <div class="project-links">
-        <a href="projects.html" class="btn-secondary">← Back to Projects</a>
-        <a href="https://github.com/ananyagpt" target="_blank" class="btn-primary">View on GitHub</a>
-      </div>
     </div>
+  </section>
+
+  <!-- BACK BUTTON -->
+  <section class="project-back">
+    <a href="projects.html">← Back to Projects</a>
   </section>
 
   <footer>
