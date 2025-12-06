@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Film & TV Release Strategy Analysis | Ananya Gupta</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html#home">Home</a></li>
+          <li><a href="index.html#projects">Projects</a></li>
+          <li><a href="index.html#about">About Me</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="project-hero">
+    <div class="container">
+      <h1>Film & TV Release Strategy Analysis</h1>
+      <p class="subtitle">
+        A statistical analysis of 15,866 episodes across 250 TV series, comparing binge vs weekly release strategies to uncover patterns in viewer engagement and quality perception.
+      </p>
+      <img src="images/film-tv/rating-drop-comparison.png" alt="Rating Drop Comparison" class="dashboard-image" />
+    </div>
+  </section>
+
+  <!-- OVERVIEW SECTION -->
+  <section class="project-section alt-bg">
+    <div class="container">
+      <h2>Overview</h2>
+      <p>
+        Streaming platforms face a critical strategic decision: release all episodes at once (binge) or weekly? This analysis investigates how these release strategies impact viewer perception by analyzing episode-level ratings from IMDb's Top 250 TV Series.
+      </p>
+      <ul class="insight-list">
+        <li><strong>Tools Used:</strong> Python (pandas, numpy, matplotlib, seaborn, scipy), Jupyter Notebook</li>
+        <li><strong>Goal:</strong> Compare rating patterns between binge and weekly releases to inform content strategy decisions.</li>
+        <li><strong>Dataset:</strong> 15,866 episodes from 250 highly-rated TV series</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- KEY FINDINGS SECTION -->
+  <section class="project-section">
+    <div class="container">
+      <h2>Key Findings</h2>
+      <ul class="insight-list">
+        <li><strong>2.9x Larger Rating Drop:</strong> Binge-released shows experience significantly larger rating drops from first to last episode (-0.82 vs -0.28 points)</li>
+        <li><strong>Consistent Weekly Quality:</strong> Weekly releases maintain more stable episode-to-episode ratings with lower volatility</li>
+        <li><strong>Series Length Impact:</strong> Longer series show more rating decline, with the effect amplified for binge releases</li>
+        <li><strong>Statistical Significance:</strong> T-test confirms the difference is not due to chance (p < 0.05)</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- VISUALIZATIONS SECTION -->
+  <section class="project-section alt-bg">
+    <div class="container">
+      <h2>Data Visualizations</h2>
+      
+      <div style="margin: 3rem 0;">
+        <img src="images/film-tv/rating-drop-distribution.png" alt="Rating Drop Distribution" class="dashboard-image" />
+        <p style="text-align: center; color: #6b7280; margin-top: 1rem; font-style: italic;">
+          Weekly releases cluster around zero (consistent quality), while binge shows show wider variation
+        </p>
+      </div>
+
+      <div style="margin: 3rem 0;">
+        <img src="images/film-tv/rating-volatility.png" alt="Rating Volatility Comparison" class="dashboard-image" />
+        <p style="text-align: center; color: #6b7280; margin-top: 1rem; font-style: italic;">
+          Binge shows have slightly higher episode-to-episode rating volatility
+        </p>
+      </div>
+
+      <div style="margin: 3rem 0;">
+        <img src="images/film-tv/rating-vs-length.png" alt="Rating Drop vs Series Length" class="dashboard-image" />
+        <p style="text-align: center; color: #6b7280; margin-top: 1rem; font-style: italic;">
+          Longer series tend to show more rating decline, especially for binge releases
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- METHODOLOGY SECTION -->
+  <section class="project-section">
+    <div class="container">
+      <h2>Methodology</h2>
+      <p><strong>Data Collection:</strong> Used IMDb's Top 250 TV Series dataset from Kaggle containing episode-level ratings.</p>
+      
+      <p><strong>Classification:</strong> Shows were classified as "Binge" (streaming originals released all at once) or "Weekly" (traditional broadcast/cable) based on their primary release strategy.</p>
+      
+      <p><strong>Analysis Steps:</strong></p>
+      <ul class="insight-list">
+        <li>Calculated rating drops (first episode rating - last episode rating) for each series with 10+ episodes</li>
+        <li>Compared average drops between release strategies using descriptive statistics</li>
+        <li>Performed independent samples t-test to validate statistical significance</li>
+        <li>Analyzed rating volatility (standard deviation) across episodes</li>
+        <li>Examined relationship between series length and rating decline patterns</li>
+      </ul>
+
+      <p><strong>Limitations:</strong></p>
+      <ul class="insight-list">
+        <li>Small sample size of binge-release shows (4 vs 222 weekly shows)</li>
+        <li>Dataset biased toward highly-rated shows (Top 250 only)</li>
+        <li>Does not account for platform-specific factors or marketing strategies</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- BUSINESS IMPACT SECTION -->
+  <section class="project-section alt-bg">
+    <div class="container">
+      <h2>Business Recommendations</h2>
+      
+      <p><strong>For Streaming Platforms:</strong></p>
+      <ul class="insight-list">
+        <li>Consider hybrid release strategies for longer series (6+ episodes) to maintain sustained engagement</li>
+        <li>Use weekly releases for flagship content to build buzz and word-of-mouth over time</li>
+        <li>Reserve binge releases for shorter, high-quality limited series</li>
+      </ul>
+
+      <p><strong>For Content Creators:</strong></p>
+      <ul class="insight-list">
+        <li>Focus on strong finales when planning binge releases, as ratings tend to drop faster</li>
+        <li>Ensure consistent episode quality for binge viewing</li>
+        <li>Consider different pacing strategies for binge vs weekly formats</li>
+      </ul>
+
+      <p><strong>Future Analysis:</strong></p>
+      <ul class="insight-list">
+        <li>Analyze completion rates and viewer retention metrics by release strategy</li>
+        <li>Study social media engagement patterns during release periods</li>
+        <li>Investigate genre-specific effects (drama vs comedy vs documentary)</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- OUTCOME SECTION -->
+  <section class="project-section">
+    <div class="container">
+      <h2>Outcome</h2>
+      <p>
+        This analysis provides data-driven insights into the effectiveness of different content release strategies. The findings suggest that while binge releases offer convenience, weekly releases may better maintain viewer engagement and quality perception over time. These insights can help streaming platforms make more informed decisions about release strategies based on content type, series length, and business objectives.
+      </p>
+      <p>
+        <strong>Skills Demonstrated:</strong> Statistical Analysis, Hypothesis Testing, Data Visualization, Python Programming, Business Insight Translation
+      </p>
+    </div>
+  </section>
+
+  <!-- BACK BUTTON -->
+  <section class="project-back">
+    <a href="index.html#projects">← Back to Projects</a>
+  </section>
+
+  <footer>
+    <p>© 2025 Ananya Gupta | Data Analytics Portfolio</p>
+  </footer>
+</body>
+</html>
