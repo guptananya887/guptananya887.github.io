@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Debut Novels vs Sequels Analysis | Ananya Gupta</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html#home">Home</a></li>
+          <li><a href="index.html#projects">Projects</a></li>
+          <li><a href="index.html#about">About Me</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="project-hero">
+    <div class="container">
+      <h1>Are Debut Novels More Successful Than Sequels?</h1>
+      <img src="images/books/thumbnail.png" alt="Books Analysis" style="max-width: 600px; width: 100%; margin: 2rem auto; display: block; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);" />
+      <p class="subtitle">
+        A data-driven analysis of 11,000+ Goodreads books comparing debut novels and later works to inform publishing investment strategies and author career trajectories.
+      </p>
+    </div>
+  </section>
+
+  <!-- OVERVIEW SECTION -->
+  <section class="project-section alt-bg">
+    <div class="container">
+      <h2>Overview</h2>
+      <p>
+        Publishers face a critical investment decision: should they bet on untested debut authors or established writers' new works? This analysis examines rating patterns, reader engagement, and success rates across thousands of books to provide data-driven recommendations.
+      </p>
+      <ul class="insight-list">
+        <li><strong>Tools Used:</strong> Python (pandas, numpy, matplotlib, seaborn, scipy), Jupyter Notebook</li>
+        <li><strong>Goal:</strong> Compare performance metrics between debut novels and later works to guide publishing decisions.</li>
+        <li><strong>Dataset:</strong> 11,123 books from Goodreads with ratings, reviews, and author information</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- KEY FINDINGS SECTION -->
+  <section class="project-section">
+    <div class="container">
+      <h2>Key Findings</h2>
+      <ul class="insight-list">
+        <li><strong>Higher Debut Ratings:</strong> Debut novels receive slightly higher average ratings (3.97 vs 3.93)</li>
+        <li><strong>Significantly More Engagement:</strong> Debuts generate 81% more reader engagement (29,161 vs 16,077 average ratings)</li>
+        <li><strong>Consistent Established Authors:</strong> Later works from established authors show more reliability with slightly higher breakout rates (1.7% vs 1.1%)</li>
+        <li><strong>Statistical Significance:</strong> T-test confirms the rating difference is statistically significant (p < 0.0001)</li>
+        <li><strong>Quality Consistency:</strong> Authors with multiple books maintain consistent quality across their works</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- VISUALIZATIONS SECTION -->
+  <section class="project-section alt-bg">
+    <div class="container">
+      <h2>Data Visualizations</h2>
+      
+      <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 2rem; margin: 2rem 0;">
+        <div style="text-align: center;">
+          <img src="images/books/rating-comparison.png" alt="Rating Comparison" style="width: 100%; max-width: 500px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);" />
+          <p style="color: #6b7280; margin-top: 1rem; font-size: 0.9rem; font-style: italic;">
+            Debut novels achieve slightly higher average ratings
+          </p>
+        </div>
+
+        <div style="text-align: center;">
+          <img src="images/books/rating-distribution.png" alt="Rating Distribution" style="width: 100%; max-width: 500px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);" />
+          <p style="color: #6b7280; margin-top: 1rem; font-size: 0.9rem; font-style: italic;">
+            Similar distribution patterns with slight debut advantage
+          </p>
+        </div>
+
+        <div style="text-align: center;">
+          <img src="images/books/review-count-comparison.png" alt="Review Count Comparison" style="width: 100%; max-width: 500px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);" />
+          <p style="color: #6b7280; margin-top: 1rem; font-size: 0.9rem; font-style: italic;">
+            Debuts generate 81% more reader engagement
+          </p>
+        </div>
+
+        <div style="text-align: center;">
+          <img src="images/books/breakout-success.png" alt="Breakout Success Rate" style="width: 100%; max-width: 500px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);" />
+          <p style="color: #6b7280; margin-top: 1rem; font-size: 0.9rem; font-style: italic;">
+            Established authors show higher breakout success rates
+          </p>
+        </div>
+      </div>
+
+      <style>
+        @media (max-width: 768px) {
+          div[style*="grid-template-columns"] {
+            grid-template-columns: 1fr !important;
+          }
+        }
+      </style>
+    </div>
+  </section>
+
+  <!-- METHODOLOGY SECTION -->
+  <section class="project-section">
+    <div class="container">
+      <h2>Methodology</h2>
+      <p><strong>Data Collection:</strong> Used Goodreads Books dataset from Kaggle containing 11,000+ books with comprehensive rating and review data.</p>
+      
+      <p><strong>Classification Approach:</strong> Books were classified as "Debut" (author's most popular/first book in dataset) or "Later Work" based on author's body of work and publication patterns.</p>
+      
+      <p><strong>Analysis Steps:</strong></p>
+      <ul class="insight-list">
+        <li>Cleaned data and filtered books with at least 100 ratings for meaningful analysis</li>
+        <li>Grouped books by author and identified debut works using ratings popularity as a proxy</li>
+        <li>Compared average ratings, engagement metrics (ratings count, reviews), and success rates</li>
+        <li>Performed independent samples t-test to validate statistical significance</li>
+        <li>Calculated "breakout success" rate (books with 4.5+ rating)</li>
+        <li>Analyzed consistency patterns across multiple works by the same author</li>
+      </ul>
+
+      <p><strong>Key Metrics Analyzed:</strong></p>
+      <ul class="insight-list">
+        <li>Average rating (mean, median, standard deviation)</li>
+        <li>Reader engagement (total ratings count, text reviews count)</li>
+        <li>Breakout success rate (percentage of books with 4.5+ rating)</li>
+        <li>Author consistency (books per author, rating variance)</li>
+      </ul>
+
+      <p><strong>Limitations:</strong></p>
+      <ul class="insight-list">
+        <li>Dataset represents popular books on Goodreads, not entire publishing market</li>
+        <li>Classification uses popularity-based proxy rather than true chronological order</li>
+        <li>Does not account for marketing budgets, publisher size, or release timing</li>
+        <li>Self-selection bias: readers who finish and rate books may differ from general readership</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- BUSINESS IMPACT SECTION -->
+  <section class="project-section alt-bg">
+    <div class="container">
+      <h2>Business Recommendations</h2>
+      
+      <p><strong>For Publishers:</strong></p>
+      <ul class="insight-list">
+        <li><strong>Balanced Portfolio Strategy:</strong> Invest in both debuts (high engagement potential) and established authors (consistent performance)</li>
+        <li><strong>Debut Investment:</strong> Debuts generate significantly more buzz - allocate stronger marketing budgets to promising debuts</li>
+        <li><strong>Risk Management:</strong> Established authors provide more predictable returns - use for steady revenue streams</li>
+        <li><strong>Quality Over Quantity:</strong> Focus on debut quality (4.5+ potential) rather than volume, as initial reception strongly predicts long-term success</li>
+      </ul>
+
+      <p><strong>For Authors:</strong></p>
+      <ul class="insight-list">
+        <li><strong>Debut Impact:</strong> First book performance is critical - invest heavily in quality and pre-launch buzz</li>
+        <li><strong>Consistency Matters:</strong> Readers expect maintained quality across works - don't rush follow-ups</li>
+        <li><strong>Fan Base Building:</strong> Strong debut creates foundation for sustainable career with reliable later work sales</li>
+        <li><strong>Marketing Focus:</strong> Leverage debut momentum - reader engagement peaks with first books</li>
+      </ul>
+
+      <p><strong>Investment Framework:</strong></p>
+      <ul class="insight-list">
+        <li><strong>High-Risk, High-Reward Debuts:</strong> 20-30% of budget on promising debuts with 4.5+ potential</li>
+        <li><strong>Established Author Portfolio:</strong> 50-60% on proven authors for consistent revenue</li>
+        <li><strong>Debut Author Development:</strong> 10-20% on supporting successful debuts' second books</li>
+      </ul>
+
+      <p><strong>Future Analysis Opportunities:</strong></p>
+      <ul class="insight-list">
+        <li>Analyze genre-specific patterns (mystery vs romance vs literary fiction)</li>
+        <li>Study timing between releases and reader retention rates</li>
+        <li>Investigate correlation between debut success and series profitability</li>
+        <li>Compare traditional publishing vs self-publishing debut success rates</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- OUTCOME SECTION -->
+  <section class="project-section">
+    <div class="container">
+      <h2>Outcome</h2>
+      <p>
+        This analysis provides actionable insights for publishers navigating the debut vs established author investment decision. The data reveals that debuts generate exceptional reader engagement and buzz, making them valuable for building excitement and discovering breakout talent. However, established authors offer reliability and consistency that balances portfolio risk.
+      </p>
+      <p>
+        The optimal strategy combines both: invest in high-potential debuts for market excitement and brand building, while maintaining a base of established authors for predictable revenue. This balanced approach maximizes both growth potential and financial stability.
+      </p>
+      <p>
+        <strong>Skills Demonstrated:</strong> Statistical Analysis, Hypothesis Testing, Data Visualization, Python Programming, Business Strategy Translation
+      </p>
+      
+      <!-- PROJECT LINKS -->
+      <div style="text-align: center; margin-top: 3rem; padding: 2rem; background: #f9fafb; border-radius: 8px;">
+        <h3 style="margin-bottom: 1.5rem; color: #111827;">View the Code</h3>
+        <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+          <a href="https://github.com/guptananya887/debut-vs-sequels-project/blob/main/debut-vs-sequels-analysis.ipynb" 
+             target="_blank" 
+             style="display: inline-block; padding: 0.75rem 1.5rem; background: #4f46e5; color: white; text-decoration: none; border-radius: 8px; font-weight: 600; transition: background 0.2s;">
+            📓 View Jupyter Notebook
+          </a>
+          <a href="https://github.com/guptananya887/debut-vs-sequels-project" 
+             target="_blank" 
+             style="display: inline-block; padding: 0.75rem 1.5rem; background: #111827; color: white; text-decoration: none; border-radius: 8px; font-weight: 600; transition: background 0.2s;">
+            💻 GitHub Repository
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BACK BUTTON -->
+  <section class="project-back">
+    <a href="index.html#projects">← Back to Projects</a>
+  </section>
+
+  <footer>
+    <p>© 2025 Ananya Gupta | Data Analytics Portfolio</p>
+  </footer>
+</body>
+</html>
