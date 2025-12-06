@@ -25,11 +25,10 @@
   <!-- HERO SECTION -->
   <section class="project-hero">
     <div class="container">
-      <h1>Film & TV Release Strategy Analysis</h1>
+      <h1>Do Binge-Release Shows Perform Better Than Weekly Releases?</h1>
       <p class="subtitle">
         A statistical analysis of 15,866 episodes across 250 TV series, comparing binge vs weekly release strategies to uncover patterns in viewer engagement and quality perception.
       </p>
-      <img src="images/film-tv/rating-drop-comparison.png" alt="Rating Drop Comparison" class="dashboard-image" />
     </div>
   </section>
 
@@ -66,26 +65,43 @@
     <div class="container">
       <h2>Data Visualizations</h2>
       
-      <div style="margin: 3rem 0;">
-        <img src="images/film-tv/rating-drop-distribution.png" alt="Rating Drop Distribution" class="dashboard-image" />
-        <p style="text-align: center; color: #6b7280; margin-top: 1rem; font-style: italic;">
-          Weekly releases cluster around zero (consistent quality), while binge shows show wider variation
-        </p>
+      <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 2rem; margin: 2rem 0;">
+        <div style="text-align: center;">
+          <img src="images/film-tv/rating-drop-comparison.png" alt="Rating Drop Comparison" style="width: 100%; max-width: 500px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);" />
+          <p style="color: #6b7280; margin-top: 1rem; font-size: 0.9rem; font-style: italic;">
+            Binge shows drop 2.9x more in ratings
+          </p>
+        </div>
+
+        <div style="text-align: center;">
+          <img src="images/film-tv/rating-drop-distribution.png" alt="Rating Drop Distribution" style="width: 100%; max-width: 500px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);" />
+          <p style="color: #6b7280; margin-top: 1rem; font-size: 0.9rem; font-style: italic;">
+            Weekly releases cluster around zero (consistent quality)
+          </p>
+        </div>
+
+        <div style="text-align: center;">
+          <img src="images/film-tv/rating-volatility.png" alt="Rating Volatility Comparison" style="width: 100%; max-width: 500px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);" />
+          <p style="color: #6b7280; margin-top: 1rem; font-size: 0.9rem; font-style: italic;">
+            Binge shows have higher rating volatility
+          </p>
+        </div>
+
+        <div style="text-align: center;">
+          <img src="images/film-tv/rating-vs-length.png" alt="Rating Drop vs Series Length" style="width: 100%; max-width: 500px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);" />
+          <p style="color: #6b7280; margin-top: 1rem; font-size: 0.9rem; font-style: italic;">
+            Longer series show more rating decline
+          </p>
+        </div>
       </div>
 
-      <div style="margin: 3rem 0;">
-        <img src="images/film-tv/rating-volatility.png" alt="Rating Volatility Comparison" class="dashboard-image" />
-        <p style="text-align: center; color: #6b7280; margin-top: 1rem; font-style: italic;">
-          Binge shows have slightly higher episode-to-episode rating volatility
-        </p>
-      </div>
-
-      <div style="margin: 3rem 0;">
-        <img src="images/film-tv/rating-vs-length.png" alt="Rating Drop vs Series Length" class="dashboard-image" />
-        <p style="text-align: center; color: #6b7280; margin-top: 1rem; font-style: italic;">
-          Longer series tend to show more rating decline, especially for binge releases
-        </p>
-      </div>
+      <style>
+        @media (max-width: 768px) {
+          div[style*="grid-template-columns"] {
+            grid-template-columns: 1fr !important;
+          }
+        }
+      </style>
     </div>
   </section>
 
